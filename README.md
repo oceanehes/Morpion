@@ -14,9 +14,12 @@ Deux joueurs jouent à tour de rôle sur une grille de 3 × 3. X commence. Trois
 
 Trouvez le code caché de quatre couleurs en dix essais au maximum. Les répétitions sont permises. Après chaque proposition, le jeu indique le nombre de couleurs bien placées et mal placées.
 
-### API de test 0.2
+### Installer et jouer hors ligne
+
+Le Code secret est une application web progressive (PWA). Sur un navigateur compatible, choisissez **Installer l’application** lorsqu’il apparaît dans le jeu, ou utilisez l’option d’installation du menu du navigateur. Après le premier chargement en ligne, le jeu, le morpion et les icônes restent disponibles hors ligne.
+
+## API de test 0.2
 
 L’API de test est accessible dans le navigateur à l’adresse [code-secret.html?test=1](https://oceanehes.github.io/Morpion/code-secret.html?test=1), via `window.codeSecretTest`. Sans le paramètre `test=1`, cet objet n’est pas exposé. L’API et l’interface utilisent le même état et le même moteur.
 
 Méthodes : `getConfig()`, `startGame(options?)`, `submitGuess(guess)` et `getState()`. Les appels de mutation sont asynchrones ; attendez leur promesse avant le prochain appel.
-
