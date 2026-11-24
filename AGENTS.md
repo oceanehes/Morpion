@@ -1,8 +1,8 @@
 # Consignes du projet
 
-- Le projet est un morpion pour deux joueurs sur le même écran.
-- L’application reste autonome dans `morpion.html`, sans dépendance ni étape de compilation.
-- L’interface et les textes destinés aux joueurs restent en français.
-- Préserver les règles du morpion, l’accessibilité clavier et les libellés accessibles des cases.
-- Garder une mise en page utilisable sur mobile et ordinateur, et respecter la préférence de réduction des animations.
-- Pour vérifier le jeu localement, ouvrir `morpion.html` dans un navigateur.
+- Le dépôt contient le morpion et le jeu Code secret ; chacun garde sa page autonome.
+- Préserver les règles, l’interface française, l’accessibilité clavier et les libellés accessibles.
+- Garder une mise en page utilisable sur mobile et ordinateur et respecter la préférence de réduction des animations.
+- Pour le Code secret, l’interface et l’API 0.2 doivent partager le même moteur et le même état. Ne jamais exposer le code secret dans l’API.
+- `window.codeSecretTest` ne doit être exposé que lorsque l’URL contient `?test=1`.
+- Les pages fonctionnent sans dépendance ni étape de compilation.
